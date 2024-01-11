@@ -31,6 +31,15 @@ function App() {
         >
           Decrement
         </button>
+        {/* Display the increment/decrement markers with spaces every 5 */}
+        {/* <div className="flex items-center space-x-2 mt-2">
+          {Array.from({ length: Math.floor(count / 5) }, (_, i) => (
+            <>{Array(5).fill("|")}&nbsp;</>
+          ))}
+          {Array(Math.max(0, count % 5)).fill("|")}&nbsp;
+          {Array(Math.max(0, 10 - count)).fill(" ")}
+        </div> */}
+        <h1>{Array(count).fill("|")}</h1>
       </div>
     </div>
   );
